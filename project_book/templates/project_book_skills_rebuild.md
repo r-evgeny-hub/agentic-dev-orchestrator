@@ -134,12 +134,23 @@ question and keep moving.
 - Launch research sessions when repeated or systemic problems appear.
 - Stop only for a true blocker or Architect interruption.
 
-## Optional Claude Code Resume Helper
+## Optional Claude Code Compaction Helper
 
-Claude Code may use `.claude/settings.json` hooks to inject Project Book resume
-reminders after compaction or resume. Hooks are optional helpers, not workflow
-logic. Project Book must remain usable from `FIXER_HANDOFF.md` and the session
-files without hook support.
+Claude Code uses `.claude/settings.json`:
+
+```json
+{
+  "autoCompactEnabled": true,
+  "autoCompactWindow": 400000
+}
+```
+
+This is a Claude Code platform setting for when compaction happens. It is not a
+Project Book planning rule and must not be used as a rule for splitting tasks.
+
+The hook layer may inject Project Book resume reminders after compaction or
+resume. Hooks are optional helpers, not workflow logic. Project Book must remain
+usable from `FIXER_HANDOFF.md` and the session files without hook support.
 
 ## Optional Codex Compaction Helper
 

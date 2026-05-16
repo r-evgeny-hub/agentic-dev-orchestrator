@@ -91,12 +91,23 @@ Activate skill $init-fixer.
 3. Let the Fixer ask startup questions, collect access details, update clean
    docs, and create the first bounded Netrunner session.
 
-## Optional Claude Code Resume Helper
+## Optional Claude Code Compaction Helper
 
-This template ships `.claude/settings.json` with optional hooks that may remind
-Claude Code to read `FIXER_HANDOFF.md` after compaction or resume. It is a
-helper only; the handoff and session files remain the durable recovery
-mechanism.
+This template ships `.claude/settings.json` with:
+
+```json
+{
+  "autoCompactEnabled": true,
+  "autoCompactWindow": 400000
+}
+```
+
+This is a Claude Code platform setting for when compaction happens. It is not a
+Project Book planning rule and must not be used as a rule for splitting tasks.
+
+The hook layer may remind Claude Code to read `FIXER_HANDOFF.md` after
+compaction or resume. It is a helper only; the handoff and session files remain
+the durable recovery mechanism.
 
 ## Optional Codex Compaction Helper
 

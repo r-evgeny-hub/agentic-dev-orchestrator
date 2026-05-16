@@ -22,6 +22,7 @@ No concrete product project is active yet.
 - An empty `initial_package/` area for future project intake materials.
 - `project_book/private/access.md` for real logins, passwords, tokens, account
   notes, and service links requested in chat.
+- Claude Code compaction settings with `autoCompactWindow = 400000`.
 - Optional hook helpers for resume reminders after compaction or session
   restart.
 

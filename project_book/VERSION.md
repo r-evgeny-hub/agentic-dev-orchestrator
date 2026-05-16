@@ -45,6 +45,8 @@
   after compaction or resume.
 - Aligned the workflow around lightweight Project Book files, optional resume
   hints, and sequential autonomous execution.
+- Kept Claude Code `autoCompactWindow = 400000` as a platform compaction
+  setting, separate from Project Book planning rules.
 - Added explicit startup interview and access collection rules.
 
 ## Migration Note
