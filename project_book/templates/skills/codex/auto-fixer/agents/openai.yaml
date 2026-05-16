@@ -1,0 +1,3 @@
+name: Auto Fixer
+description: Run sequential autonomous Project Book work.
+default_prompt: Activate skill $auto-fixer. Continue automatically from the current Project Book state.

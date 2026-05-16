@@ -1,0 +1,3 @@
+name: Init Netrunner
+description: Execute one bounded Project Book session.
+default_prompt: Activate skill $init-netrunner.

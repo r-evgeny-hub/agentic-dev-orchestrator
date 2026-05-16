@@ -1,0 +1,12 @@
+.DS_Store
+**/.DS_Store
+
+__pycache__/
+*.py[cod]
+
+.env
+.env.*
+!.env.example
+
+project_book/private/*.local.md
+project_book/private/secrets*

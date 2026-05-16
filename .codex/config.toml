@@ -1,0 +1,3 @@
+# Project-local Codex config layer.
+# Kept intentionally empty so Codex can discover `.codex/hooks.json` in this
+# portable Project Book template.

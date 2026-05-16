@@ -1,0 +1,3 @@
+name: Fixer Handoff
+description: Refresh Project Book handoff state.
+default_prompt: Activate skill $fixer-handoff.
