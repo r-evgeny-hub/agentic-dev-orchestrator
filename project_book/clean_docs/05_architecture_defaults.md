@@ -30,8 +30,8 @@ First prove the working path. Put learning into short explanations, dry runs, an
 | Secrets | Secret Manager or environment variables |
 | Generated files and artifacts | Cloud Storage or object storage |
 | Logs | Simple run logs first; Cloud Logging on GCP |
-| Database | Supabase / Postgres as the initial source of truth |
-| Database migration | Do not migrate away from Supabase without a deliberate reason |
+| Database | GCP-native database as the initial source of truth |
+| Database selection | Start with the simplest GCP fit: Firestore for document/state data, Cloud SQL when relational SQL is clearly needed, and BigQuery for analytics |
 | Backend language | Go for new backend services by default |
 | Frontend | Vite + React + TypeScript + Tailwind + shadcn/ui + Lottie |
 | Frontend hosting | Vercel is acceptable short-term; GCP can be used when one-cloud simplicity matters |
@@ -84,7 +84,7 @@ Before choosing a service, check:
 
 Prefer transferable surfaces such as:
 
-- Postgres / Supabase
+- GCP-native managed databases with clear export paths
 - Docker / Cloud Run
 - object storage
 - clear logs
@@ -160,7 +160,7 @@ The frontend should call the backend. The backend may control Codex.
 
 Agent tools should be product-oriented where possible:
 
-- `get user profile`, not `Postgres tool`
+- `get user profile`, not `raw database tool`
 - `save product record`, not `database write`
 - `upload artifact`, not `storage tool`
 - `create download link`, not `file operation`

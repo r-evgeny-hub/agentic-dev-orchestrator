@@ -1,9 +1,29 @@
 # Fixer / Netrunner — Unified Project Book Starter
 
 This is a portable Project Book starter for AI-assisted software-first projects.
+It is a lightweight operating system for running AI agents on real work without
+losing continuity, evidence, or product judgment.
+
 It works on both Claude Code and Codex. The same Project Book files, templates,
 and role skills are used on both platforms; only skill invocation syntax,
 subagent mechanism, and manual-session container differ.
+
+## Why This Exists
+
+AI coding agents are powerful, but long-running project work breaks down when
+context is scattered across chats, terminals, partial plans, and half-remembered
+decisions.
+
+Project Book gives the agent team a durable working memory:
+
+- what the project is trying to achieve;
+- what is true right now;
+- what changed in each bounded work session;
+- what evidence proves the work is done;
+- where the next operator should resume.
+
+The goal is not to create process for its own sake. The goal is to make AI work
+more inspectable, recoverable, and useful for business/product outcomes.
 
 ## What This Is
 
@@ -25,9 +45,26 @@ The four role skills are:
 - **`fixer-handoff`**: current-state recovery snapshot.
 - **`auto-fixer`**: sequential autonomous Fixer -> Netrunner -> Fixer-review loop.
 
+## Who It Is For
+
+Use this if you want AI agents to work on projects that need more than one
+prompt:
+
+- product prototypes;
+- internal tools;
+- marketing automation;
+- AI agent workflows;
+- research-to-build loops;
+- technical migrations;
+- projects where future agents need to understand what already happened.
+
+It is especially useful when the human owner thinks in outcomes, metrics, and
+tradeoffs, while the agent handles implementation details.
+
 ## Quick Start
 
-1. Copy this folder into the project workspace.
+1. Use this repository as a template or copy this folder into the project
+   workspace.
 2. Pick your platform and read its entry point:
    - **Claude Code:** read [`CLAUDE.md`](CLAUDE.md).
    - **Codex:** read [`AGENTS.md`](AGENTS.md).
@@ -35,6 +72,17 @@ The four role skills are:
 4. Describe the project to the Fixer.
 5. Let the Fixer run the startup interview, collect access details, write clean
    project truth, and create the first bounded Netrunner session.
+
+## What You Get
+
+- A normalized `project_book/` structure.
+- Clean docs for current state, target direction, operating rules, next steps,
+  architecture defaults, relationships, and session index.
+- Session logs with `plan.md`, `logs.md`, and `review.md`.
+- A current `FIXER_HANDOFF.md` recovery snapshot.
+- Installable role skills for Claude Code and Codex.
+- Optional compaction/resume hooks.
+- A private access file pattern that keeps secrets out of public docs.
 
 ## Key Mechanics
 
@@ -139,3 +187,7 @@ After context compaction, the correct role is determined by
 
 The platform hooks only inject reminders. They do not store project truth, do
 not control workflow logic, and are not required for Project Book to work.
+
+## License
+
+MIT. Use it, adapt it, fork it, and make it fit your own AI project workflow.
