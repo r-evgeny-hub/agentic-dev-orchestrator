@@ -1,9 +1,9 @@
 # Agentic Dev Orchestrator
 
-Agentic Dev Orchestrator is a lightweight framework for orchestrating
-AI-assisted development. It turns product intent into bounded agent work,
-delegates execution to Codex or Claude/Anthropic-style agents, reviews evidence,
-and preserves project memory across sessions.
+Agentic Dev Orchestrator is a lightweight autonomous framework for AI-assisted
+development. It turns product intent into scoped Project Book sessions, runs
+sequential Fixer / Netrunner work in Codex or Claude Code, reviews evidence, and
+preserves project memory across sessions.
 
 The internal mechanics still use the Fixer / Netrunner model:
 
