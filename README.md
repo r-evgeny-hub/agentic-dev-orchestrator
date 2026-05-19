@@ -1,20 +1,29 @@
-# Fixer / Netrunner — Unified Project Book Starter
+# Agentic Dev Orchestrator
 
-This is a portable Project Book starter for AI-assisted software-first projects.
-It is a lightweight operating system for running AI agents on real work without
-losing continuity, evidence, or product judgment.
+Agentic Dev Orchestrator is a lightweight framework for orchestrating
+AI-assisted development. It turns product intent into bounded agent work,
+delegates execution to Codex or Claude/Anthropic-style agents, reviews evidence,
+and preserves project memory across sessions.
+
+The internal mechanics still use the Fixer / Netrunner model:
+
+- **Fixer** clarifies intent, plans bounded work, reviews evidence, and updates
+  project truth.
+- **Netrunner** executes one scoped implementation or research session.
+- **Project Book** keeps durable memory, logs, decisions, and handoff state.
 
 It works on both Claude Code and Codex. The same Project Book files, templates,
 and role skills are used on both platforms; only skill invocation syntax,
-subagent mechanism, and manual-session container differ.
+subagent mechanism, and manual-session container differ. It can also serve as a
+workflow layer around SDK-based agent runners.
 
 ## Why This Exists
 
-AI coding agents are powerful, but long-running project work breaks down when
-context is scattered across chats, terminals, partial plans, and half-remembered
-decisions.
+AI coding agents are powerful, but long-running development work breaks down
+when context is scattered across chats, terminals, partial plans, and
+half-remembered decisions.
 
-Project Book gives the agent team a durable working memory:
+Agentic Dev Orchestrator gives the agent team a durable working memory:
 
 - what the project is trying to achieve;
 - what is true right now;
@@ -22,12 +31,13 @@ Project Book gives the agent team a durable working memory:
 - what evidence proves the work is done;
 - where the next operator should resume.
 
-The goal is not to create process for its own sake. The goal is to make AI work
-more inspectable, recoverable, and useful for business/product outcomes.
+The goal is not to create process for its own sake. The goal is to make AI
+development work more inspectable, recoverable, and useful for business/product
+outcomes.
 
 ## What This Is
 
-Project Book is an operating system for AI work:
+Agentic Dev Orchestrator is an operating system for AI development work:
 
 ```text
 Architect intent
